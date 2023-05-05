@@ -21,7 +21,7 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2023-05-04T14:02:15+00:00",
+            "datePublished": "2023-05-05T15:29:15+00:00",
             "hasPart": [
                 {
                     "@id": "sort-and-change-case.ga"
@@ -38,6 +38,11 @@
             "mainEntity": {
                 "@id": "sort-and-change-case.ga"
             },
+            "mentions": [
+                {
+                    "@id": "#414d68cc-ca89-4cef-8e90-e8a3317cf61a"
+                }
+            ],
             "name": "sort-and-change-case-workflow"
         },
         {
@@ -90,6 +95,40 @@
             "@id": "https://orcid.org/0000-0001-8271-5429",
             "@type": "Person",
             "name": "Simone Leo"
+        },
+        {
+            "@id": "#414d68cc-ca89-4cef-8e90-e8a3317cf61a",
+            "@type": "TestSuite",
+            "definition": {
+                "@id": "sort-and-change-case-tests.yml"
+            },
+            "instance": [
+                {
+                    "@id": "#82086caf-6981-4535-8f86-83db7155d96c"
+                }
+            ],
+            "mainEntity": {
+                "@id": "sort-and-change-case.ga"
+            },
+            "name": "Test suite for sort-and-change-case-workflow"
+        },
+        {
+            "@id": "#82086caf-6981-4535-8f86-83db7155d96c",
+            "@type": "TestInstance",
+            "name": "GitHub Actions workflow for testing sort-and-change-case-workflow",
+            "resource": "repos/crs4/sort-and-change-case-workflow/actions/workflows/wftest.yml",
+            "runsOn": {
+                "@id": "https://w3id.org/ro/terms/test#GithubService"
+            },
+            "url": "https://api.github.com"
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#GithubService",
+            "@type": "TestService",
+            "name": "Github Actions",
+            "url": {
+                "@id": "https://github.com"
+            }
         },
         {
             "@id": "sort-and-change-case-tests.yml",
