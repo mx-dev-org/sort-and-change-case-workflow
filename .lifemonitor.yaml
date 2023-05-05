@@ -1,7 +1,7 @@
 # worfklow name (override name defined on the RO-Crate metadata)
-# name: MyWorkflow
+name: "Sort and change case"
 # worfklow visibility
-public: False
+public: true
 
 # Issue Checker Settings
 issues:
@@ -17,36 +17,6 @@ issues:
 
 # Github Integration Settings
 push:
-  branches:
-    # Define the list of branches to watch
-    # - name: feature/XXX                   # wildcards can be used to specify branches (e.g., feature/*)
-    #   update_registries: ["wfhubdev"]     # available registries are listed
-    #                                       # by the endpoint `<lifemonitor_url>/registries`
-    #                                       # (e.g., https://api.lifemontor.eu/registries)
-    #   lifemonitor_instance: development   # uncomment to use the 'development' instance of LifeMonitor
-    #                                       # (the 'production' instance is used by default)
-    - name: "main"
-      update_registries: []
-      enable_notifications: true
-      # lifemonitor_instance: development
-    # - name: "develop"
-    #   update_registries: []
-    #   enable_notifications: true
-    #   lifemonitor_instance: development
-
   tags:
-    # Define the list of tags to watch
-    # - name: v*.*.*                    # wildcards can be used to specify tags (e.g., feature/*)
-    #   update_registries: ["wfhub"]    # available registries are listed
-    #                                   # by the endpoint `<lifemonitor_url>/registries`
-    #                                   # (e.g., https://api.lifemontor.eu/registries)
-    #   lifemonitor_instance: development   # uncomment to use the 'development' instance of LifeMonitor
-    #                                       # (the 'production' instance is used by default)
-    - name: "v*.*.*"
-      update_registries: [wfhub, wfhubdev]
-      enable_notifications: true
-      # lifemonitor_instance: development
     - name: "*.*.*"
-      update_registries: [wfhub, wfhubdev]
-      enable_notifications: true
-      # lifemonitor_instance: development
+      update_registries: ["wfhubdev"]
