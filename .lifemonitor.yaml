@@ -17,6 +17,9 @@ issues:
 
 # Github Integration Settings
 push:
+  branches:
+    - name: 'main'
+      update_registries: []
   tags:
     - name: "*.*.*"
       update_registries: ["wfhubdev"]
