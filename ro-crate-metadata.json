@@ -116,7 +116,7 @@
             "@id": "#82086caf-6981-4535-8f86-83db7155d96c",
             "@type": "TestInstance",
             "name": "GitHub Actions workflow for testing sort-and-change-case-workflow",
-            "resource": "repos/crs4/sort-and-change-case-workflow/actions/workflows/wftest.yml",
+            "resource": "repos/mx-dev-org/sort-and-change-case-workflow/actions/workflows/wftest.yml",
             "runsOn": {
                 "@id": "https://w3id.org/ro/terms/test#GithubService"
             },
